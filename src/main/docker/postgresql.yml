@@ -1,0 +1,11 @@
+version: '2'
+services:
+    pqr-postgresql:
+        image: postgres:9.6.2
+        # volumes:
+        #     - ~/volumes/jhipster/pqr/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=pqr
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
